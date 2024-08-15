@@ -37,7 +37,7 @@ export default function Navbar() {
           </a>
           <a
             className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="https://drive.google.com/file/d/1IisSsRG3vA1pGVd7FV3-EErH_pHHtUSv/view?usp=sharing"
+            href="https://drive.google.com/file/d/1-L2gLduwQr2fajEVYz4qcSM1-m1I6iRc/view?usp=sharing"
           >
             Resume
           </a>
