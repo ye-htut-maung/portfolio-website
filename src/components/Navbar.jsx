@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Navbar() {
       }}
     >
       <div className="w-full md:w-3/5 flex justify-between items-center">
-        <h1 className="text-lg md:text-xl">Ye Htut Maung</h1>
+        <Link to="/" className="text-lg md:text-xl font-bold hover:underline focus:outline-none">Ye Htut Maung</Link>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             <FontAwesomeIcon icon={faBars} className="w-6 h-6" />
@@ -29,30 +30,31 @@ export default function Navbar() {
             isOpen ? "block absolute top-10 right-3 bg-white" : "hidden"
           } md:flex flex-col md:flex-row gap-2 text-center mt-2 md:mt-0`}
         >
-          <a
+          <Link
             className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="#"
+            to="/blog"
           >
             Blog
-          </a>
+          </Link>
+          <Link
+            className="md:hover:underline p-3 md:p-1 block md:inline-block"
+            to="/experience"
+          >
+            Experience
+          </Link>
+          <Link
+            className="md:hover:underline p-3 md:p-1 block md:inline-block"
+            to="/projects"
+          >
+            Projects
+          </Link>
           <a
             className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="https://drive.google.com/file/d/1-L2gLduwQr2fajEVYz4qcSM1-m1I6iRc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1njjRNPtgPkcXRb5NaM4EGDnEYiV_KRY4/view?usp=sharing"
           >
             Resume
           </a>
-          <a
-            className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="https://www.linkedin.com/in/ye-htut-maung/"
-          >
-            Linkedin
-          </a>
-          <a
-            className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="https://github.com/ye-htut-maung"
-          >
-            GitHub
-          </a>
+
         </div>
       </div>
     </div>
