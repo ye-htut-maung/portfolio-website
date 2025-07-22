@@ -50,7 +50,7 @@ export default function Navbar() {
           </Link>
           <a
             className="md:hover:underline p-3 md:p-1 block md:inline-block"
-            href="https://drive.google.com/file/d/1njjRNPtgPkcXRb5NaM4EGDnEYiV_KRY4/view?usp=sharing"
+            href="https://drive.google.com/file/d/1UFRqVOr0UnUG3BtCyd2W6hp7c_h9vRpp/view?usp=sharing"
           >
             Resume
           </a>
